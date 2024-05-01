@@ -1,207 +1,512 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>get to know me</title>
+
+    <link rel="icon" href="https://i.ibb.co/jgbRtKf/icon.jpg">
+
     <style>
 
         body {
+
             font-family: Arial, sans-serif;
+
             margin: 0;
+
             padding: 0;
+
             background-color: #000000;
+
         }
 
         header, footer {
+
             background-color: #000000; 
+
             color: #fff; 
+
             padding: 10px 0;
+
             text-align: center;
+
         }
 
-        nav ul, footer nav ul {
+        nav ul{
+
             list-style-type: none;
+
             padding: 0;
+
             margin: 0;
+
         }
 
-        nav ul li, footer nav ul li {
+        nav ul li{
+
             display: inline;
-            margin-right: 20px;
+
+            margin-right: 50px;
+
         }
 
-        nav ul li a, footer nav ul li a {
+        nav ul li a{
+
             text-decoration: none;
+
             color: #fff; 
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            font-weight: bold;
+
         }
 
         section {
-            padding: 300px;
+
+            border-radius: 10px;
+
             background-color: #fff; 
+
             margin-bottom: 10px;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
         }
 
         #home {
-            background-image: url('./img/erere.png');
+
+            background-image: url('https://i.ibb.co/G3KpJRn/erere.png');
+
             background-size: 100% 100%;
+
             background-position: center; 
+
+            border-radius: 10px;
+
             color: white;
+
             padding: 385px;
+
         }
+
+
+
+        #about {
+
+            padding: 250px;
+
+        }
+
+
+
+        #plan {
+
+            padding-top: 150px;
+
+            padding-bottom: 150px;
+
+            padding-left: 300px;
+
+        }
+
+
 
         footer {
+
             position: fixed;
+
             bottom: 0;
+
             width: 100%;
+
         }
 
+
+
         .container {
+
             padding: 8px;
+
             border-radius: 10px;
+
             box-shadow: #000000 10px;
-        } 
 
-          .gallery-wrap {
+        }
+
+          
+
+        .gallery-wrap {
+
             display: flex;
-            flex-direction: row;
-            width: 600px;
-            height: 300px;
-          }
 
-          .item {
+            flex-direction: row;
+
+            width: 600px;
+
+            height: 300px;
+
+            margin: 5px;
+
+            align-items: center;
+
+        }
+
+          
+
+        .item {
+
             flex: 1;
+
             height: 100%;
+
             background-position: center;
+
             background-size: cover;
+
             background-repeat: none;
+
             transition: flex 0.8s ease;
+
             filter: blur(1px);
+
             border-radius: 25px;
-          }
+
+            border: 20px;
+
+            border-color: black;
+
+            }
 
           .item:hover {
+
             flex: 7;
+
             filter: blur(0px);
+
           }
+
+          
 
           .item-1 {
-            background-image: url("slide1.jpeg");
+
+            background-image: url("https://i.ibb.co/d6Yp0rZ/slide1.jpg");
+
           }
+
+          
 
           .item-2 {
-            background-image: url("slide2.jpg");
+
+            background-image: url("https://i.ibb.co/r5DCM9J/IMG-20240425-155545.jpg");
+
           }
+
+          
 
           .item-3 {
-            background-image: url("slide3.jpg");
+
+            background-image: url("https://i.ibb.co/LvQ50B2/slide3.jpg");
+
           }
-        
+
+          
+
           .item-4 {
-            background-image: url("slide4.jpg");
+
+            background-image: url("https://i.ibb.co/ZB9WGdw/slide4.jpg");
+
           }
+
+          
 
           .item-5 {
-            background-image: url("slide5.jpg");
+
+            background-image: url("https://i.ibb.co/WWxCY8Q/IMG-20240429-165416.jpg");
+
           }
+
+          
 
           .item-6 {
-            background-image: url("slide6.jpg");
+
+            background-image: url("https://i.ibb.co/GnbmHZR/slide6.jpg");
+
           }
 
+
+
           .social {
+
             position: absolute;
+
             right: 35px;
+
             bottom: 0;
+
           }
 
           .social img {
+
             display: block;
+
             width: 32px;
+
           }
 
+
+
         #contact {
-            background-color: #ffffff; 
-            color: #000000; 
+
+            background-color: #000000; 
+
+            color: #ffffff; 
+
+            border-radius: 10px;
+
             padding: 20px;
+
             text-align: center;
+
         }
 
-        #portofolio {
+
+
+        #daily {
+
             background-color: #ffffff; 
+
             color: #000000; 
-            padding: 0px;
-            text-align: center;
+
+            border-radius: 10px;
+
+            padding-top: 150px;
+
+            padding-bottom: 150px;
+
+            padding-left: 300px;
+
+            text-align: left;
+
         }
+
+        .instagram{
+
+            background-image: url('instagram_icon.png');
+
+            width: 50px;
+
+            height: 50px;
+
+            display: inline-block;
+
+        }
+
+        .github{
+
+            background-image: url('github_icon.png');
+
+            width: 50px;
+
+            height: 50px;
+
+            display: inline-block;
+
+        }
+
+        mark{
+
+            background-color: #ebd9d9;
+
+        }
+
+        .tooltip{
+
+            position: relative;
+
+            display: inline-block;
+
+            cursor: pointer;
+
+        }
+
+        .tooltip .tooltiptext{
+
+            visibility: hidden;
+
+            width: 150px;
+
+            background-color: #ebd9d9;
+
+            color: #000000;
+
+            text-align: left;
+
+            border-radius: 0px;
+
+            padding: 5px;
+
+            position: absolute;
+
+            z-index: 1;
+
+            bottom: 125%;
+
+            left: 50%;
+
+            margin-left: -60px;
+
+            opacity: 0;
+
+            transition: opacity 0.3s;
+
+        }
+
+        .tooltip:hover .tooltiptext{
+
+            visibility: visible;
+
+            opacity: 1;
+
+        }
+
+
 
     </style>
+
 </head>
 
 <body>
+
     <div class="container">
+
     <header>
+
         <nav>
+
             <ul>
+
                 <li><a href="#home">home</a></li>
+
                 <li><a href="#about">about</a></li>
-                <li><a href="#portfolio">daily</a></li>
+
+                <li><a href="#daily">daily</a></li>
+
                 <li><a href="#plan">plan</a></li>
+
                 <li><a href="#contact">contact</a></li>
+
             </ul>
+
         </nav>
+
     </header>
 
+
+
     <section id="home">
+
     </section>
+
+
 
     <section id="about">
+
         <h1>singkat tentang aku</h1>
-        <h3><b>aku naya! bocah smk kelas tengah. umurku 17 tahun, aku gapunya hobi.. meskipun gapunya hobi, aku selalu semangat dalam hal apapun yang penting bukan belajar networking. aku suka AI dan gimana AI itu bekerja.. jam belajar favoritku di malem hari, syahdu aja gitu rasanya. selain itu, aku suka kodok.. lebih tepatnya orang yang mirip kodok sih heheh</b></h3>       
+
+        <h3><b>hai, aku naya! bocah smk kelas tengah. umurku 17 tahun, aku gapunya hobi.. meskipun gapunya hobi, aku selalu semangat dalam hal apapun yang penting bukan belajar networking. aku suka AI dan gimana AI itu bekerja.. jam belajar favoritku di <mark><span class="tooltip">malem hari<span class="tooltiptext">22.00 - 02.00</span></span></mark>, syahdu aja gitu rasanya. selain itu, aku suka kodok.. lebih tepatnya orang yang mirip kodok sih heheh</b></h3> 
+
     </section>
+
+
 
     <section id="daily">
+
         <h2>daily habits</h2>
+
             <div class="gallery-wrap">
+
               <div class="item item-1"></div>
+
               <div class="item item-2"></div>
+
               <div class="item item-3"></div>
+
               <div class="item item-4"></div>
+
               <div class="item item-5"></div>
+
               <div class="item item-6"></div>
+
             </div>
+
+          
+
     </section>
+
+
 
     <section id="plan">
+
         <h1>hope and plan</h1>
+
         <h3><b>cita citaku banyak.. tapi ini yang paling pokok heheh</b></h3>
-        
+
         <table border="1" cellpadding="8">
+
             <tr>
+
                 <td><b>AKU MAU PERGI JAUHHHHHHHHHHHHHHH TAPI GA MATI</b></td>
+
             </tr>
 
             <tr>
+
                 <td><b>AKU MAU KERJA DI GOOGLE</b></td>
+
             </tr>
 
             <tr>
-                <td><b>AKU MAU CARI JAMET JKHGHKTCFYIT SAMPE KETEMU!!</b></td>
+
+                <td><b>AKU MAU CARI <mark><span class="tooltip">JAMET<span class="tooltiptext">jamet tuh sebutan khusus buat orang</span></span></mark> JKHGHKTCFYIT SAMPE KETEMU!!</b></td>
+
             </tr>
 
             <tr>
+
                 <td><b>pergi ke alaska cari SALJU! harus bangettttttttttttt</b></td>
+
             </tr>
 
             <tr>
-                <td><b>beli goodtime semobil box. kalo gada goodtime yauda</b></td>
+
+                <td><b>bagiin goodtime semobil box hehehhheh</b></td>
+
             </tr>
+
         </table>        
+
     </section>
 
+
+
     <section id="contact">
-        <h1>insta</h1>
+
+        <a href="https://instagram.com/denaeeya" class="instagram"></a>
+
+        <a href="https://github.com/denaeyaa" class="github"></a>
+
     </section>
 
     </div>
+
 </body>
+
 </html>
+
